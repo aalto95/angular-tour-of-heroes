@@ -22,5 +22,6 @@ describe('MessageService', () => {
   it('should push message', () => {
     service.add('message');
     expect(service.messages).toHaveSize(1);
+    expect(service.messages[0]).toEqual('message');
   });
 });
